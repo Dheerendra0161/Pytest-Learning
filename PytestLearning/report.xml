@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.045" timestamp="2024-03-11T14:57:19.543185" hostname="CC-LT001062"><testcase classname="test_assertions" name="test_addition" time="0.001" /><testcase classname="test_assertions" name="test_compare" time="0.000" /><testcase classname="test_assertions" name="test_equality" time="0.001"><failure message="AssertionError: Given values are not equal&#10;assert False&#10; +  where False = &lt;method-wrapper '__eq__' of int object at 0x00007FFD3B204AB8&gt;(5)&#10; +    where &lt;method-wrapper '__eq__' of int object at 0x00007FFD3B204AB8&gt; = 9.__eq__">def test_equality():
+        x, y = 9, 5
+&gt;       assert x.__eq__(y), 'Given values are not equal'  # Message can be reflected in the output
+E       AssertionError: Given values are not equal
+E       assert False
+E        +  where False = &lt;method-wrapper '__eq__' of int object at 0x00007FFD3B204AB8&gt;(5)
+E        +    where &lt;method-wrapper '__eq__' of int object at 0x00007FFD3B204AB8&gt; = 9.__eq__
+
+test_assertions.py:13: AssertionError</failure></testcase><testcase classname="test_samleFile" name="test_addition" time="0.001" /><testcase classname="test_samleFile" name="test_substraction" time="0.000" /></testsuite></testsuites>

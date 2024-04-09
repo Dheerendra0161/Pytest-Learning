@@ -1,0 +1,1 @@
+ register_all_with_valid_credential
